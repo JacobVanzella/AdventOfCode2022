@@ -2,8 +2,8 @@ use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
 fn main() {
-    println!("The elf is hording {} calories.", part_1());
-    println!("The top three elfs are hording {} calories.", part_2());
+    println!("Part 1: The elf is hording {} calories.", part_1());
+    println!("Part 2: The top three elfs are hording {} calories.", part_2());
 }
 
 fn part_1() -> i32 {

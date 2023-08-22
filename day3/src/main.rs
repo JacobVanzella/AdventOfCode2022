@@ -47,7 +47,7 @@ fn part_2() -> i32 {
         for item in sack.chars() {
             match item_hash.get(&item) {
                 Some(&pair) => {
-                    let mut result = Some((0,0));
+                    let mut result = Some((0, 0));
                     if pair.1 < group_member {
                         result = item_hash.insert(item, (pair.0 + 1, group_member));
                     }
@@ -61,10 +61,10 @@ fn part_2() -> i32 {
                         item_hash.clear();
                         break;
                     }
-                },
+                }
                 None => {
                     item_hash.insert(item, (1, group_member));
-                },
+                }
             }
         }
     }
